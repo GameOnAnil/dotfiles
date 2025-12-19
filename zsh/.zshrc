@@ -3,19 +3,19 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# === Load exports first (PATH, ZSH, etc.) ===
+# === Load exports first ===
 [[ -f $HOME/dotfiles/zsh/exports.zsh ]] && source $HOME/dotfiles/zsh/exports.zsh
 [[ -f $HOME/dotfiles/zsh/exports.local.zsh ]] && source $HOME/dotfiles/zsh/exports.local.zsh
 
-# === Set theme before loading Oh My Zsh ===
+# === Set theme for Oh My Zsh ===
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # === Load Oh My Zsh ===
-source $ZSH/oh-my-zsh.sh
+source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 # === Load plugins and aliases AFTER Oh My Zsh ===
 [[ -f $HOME/dotfiles/zsh/plugins.zsh ]] && source $HOME/dotfiles/zsh/plugins.zsh
 [[ -f $HOME/dotfiles/zsh/aliases.zsh ]] && source $HOME/dotfiles/zsh/aliases.zsh
 
-# === Load Powerlevel10k config ===
+# === Load Powerlevel10k config (optional) ===
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
