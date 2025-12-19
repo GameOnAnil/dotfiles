@@ -7,4 +7,5 @@ plugins=(
   copypath
   copyfile
   dirhistory
+  eza
 )
