@@ -5,7 +5,7 @@
 # Add user-local bin directories
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
-# Oh My Zsh path
+# Oh My Zsh path (common for all machines)
 export ZSH="$HOME/.oh-my-zsh"
 
 # OS detection
