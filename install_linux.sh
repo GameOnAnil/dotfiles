@@ -11,6 +11,8 @@ sudo apt install -y \
     curl \
     wget
 
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # Change shell to zsh (optional)
 # chsh -s /bin/zsh
 
