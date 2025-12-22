@@ -6,6 +6,5 @@ plugins=(
   zsh-autosuggestions
   copypath
   copyfile
-  dirhistory
   eza
 )
